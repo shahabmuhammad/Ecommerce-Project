@@ -17,8 +17,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
+Route::get('/clear-cache', function() {
+    Artisan::call('optimize:clear');
+    echo Artisan::output();
+    });
 
+Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
 Route::get('/{any}', [App\Http\Controllers\HomeController::class,'index'])->where('any', '.*');
 
