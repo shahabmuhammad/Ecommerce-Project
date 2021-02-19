@@ -8,6 +8,11 @@ require('./bootstrap');
 
 window.Vue = require('vue').default;
 
+
+import BootstrapVue from 'bootstrap-vue' //Importing
+
+Vue.use(BootstrapVue) // Telling Vue to use this in whole application
+
 import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
@@ -22,7 +27,7 @@ const routes = [
 
   const router = new VueRouter({
       mode:"history",
-    routes // short for `routes: routes`
+   // routes // short for `routes: routes`
   })
   
 /**

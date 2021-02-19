@@ -103,12 +103,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   <p>Users</p>
                 </router-link>
               </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="fas fa-circle nav-icon"></i>
-                  <p>Inactive Page</p>
-                </a>
-              </li>
+
             </ul>
           </li>
           <li class="nav-item">
@@ -124,7 +119,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <a class="nav-link" href="{{ route('logout') }}"
             onclick="event.preventDefault();
                           document.getElementById('logout-form').submit();">
-                          <i class="nav-icon fas fa-power-off"></i>
+                          <i class="nav-icon fas fa-power-off"></i>     
+                           
+
            <p>{{ __('Logout') }}</p>  
          </a>
 

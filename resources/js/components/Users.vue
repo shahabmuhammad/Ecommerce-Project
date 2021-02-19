@@ -6,16 +6,11 @@
               <div class="card-header">
                 <h3 class="card-title">Users Table</h3>
 
-                <div class="card-tools">
-                    <!-- <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addNew">
-                        Add New  <i class="fas fa-user-plus fa-fw"></i>
-                    </button> -->
-
-
-                    <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch 
-
+                <div class="card-tools">  
+                     <b-button v-b-modal.modal-1 class="btn btn-success">
+                       Add New <i class="fas fa-user-plus fa-fw"></i>
+                       </b-button>
+                        
                 </div>
               </div>
               <!-- /.card-header -->
@@ -49,50 +44,30 @@
             <!-- /.card -->
           </div>
         </div>
-<!-- Modal -->
-<!-- <div class="modal fade" id="addNew" tabindex="-1" aria-labelledby="addNewLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="addNewLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div> -->
 
+       <div>
+            <b-modal id="modal-1" title="Add New User">
+            <form>
+                  <div class="form-group row">
+                          <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                          <div class="col-sm-10">
+                          <input type="email" class="form-control" id="inputEmail3">
+                          </div>
+                          </div>
+                          <div class="form-group row">
+                          <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                          <div class="col-sm-10">
+                          <input type="password" class="form-control" id="inputPassword3">
+                          </div>
+                          </div>
+            </form>
+            </b-modal>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
+       </div>
 
     </div>
 </template>
 
 <script>
-    export default {
-
-    }
+ 
 </script>
